@@ -20,7 +20,11 @@ if __name__ == "__main__":
         print("Press 1 to convert your text to speech.")
         print("Press 2 to exit.")
 
-        if int(input("Enter the Choice : ")) == 1:
+        choice = int(input("Enter the Choice: "))
+
+        if choice == 1:
             text_to_speech()
-        else:
+        elif choice == 2:
             break
+        else:
+            print("Invalid Input... Press 1 or 2.")
